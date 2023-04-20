@@ -25,25 +25,7 @@ NODE insert_front(NODE first,int elem)
 	temp->link=first;
 	return temp;
 }
-/*NODE delete_front(NODE first)
-{
-	NODE next;
-	if(first==NULL)
-	{
-		printf("Deletion not possible\n");
-		return NULL;
-	}
-	if(first->link==NULL)
-	{
-		printf("The deleted element is %d\n",first->info);
-		free(first);
-		return NULL;
-	}
-	next = first->link;
-	printf("The deleted element is %d\n",first->info);
-	free(first);
-	return next;
-}*/
+
 NODE delete_front(NODE first)
 {
     NODE next;
@@ -60,23 +42,7 @@ NODE delete_front(NODE first)
         return next;
     }
 }
-/*void display(NODE first)
-{
-	if(first==NULL)
-	{
-		printf("No elements to display\n");
-	}
-	else
-	{
-		printf("Displayig the elements of SLL:\n");
-		while(first!=NULL)
-		{
-			printf("%d\t",first->info);
-			first=first->link;
-		}
-		printf("\n");
-	}
-}*/
+
 void display(NODE first)
 {
     if(first == NULL)
